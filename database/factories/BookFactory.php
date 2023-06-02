@@ -19,6 +19,8 @@ class BookFactory extends Factory
     {
         return [
             'title' => $this->faker->sentence,
+            'description' => $this->faker->sentence,
+            'published_date' => $this->faker->date,
             'user_id' => User::factory(),
         ];
     }
