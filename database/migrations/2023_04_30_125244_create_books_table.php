@@ -15,9 +15,11 @@ return new class extends Migration
             $table->id();
 
             $table->string('title');
+            $table->string('description');
+            $table->date('published_date');
 
-//            $table->unsignedBigInteger('user_id');
-//            $table->foreign('user_id')->references('id')->on('users');
+            //$table->unsignedBigInteger('user_id');
+            //$table->foreign('user_id')->references('id')->on('users');
 
             $table->foreignIdFor(\App\Models\User::class);
 
